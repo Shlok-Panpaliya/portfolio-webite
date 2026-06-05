@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="35%" stop-color="#2d1b69"/>
+      <stop offset="65%" stop-color="#5b4bb4"/>
+      <stop offset="100%" stop-color="#8b7fd4"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#0984e3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <g opacity="0.08">
+    <path d="M0 40h1200M0 80h1200M0 120h1200M0 160h1200M0 200h1200M0 240h1200M0 280h1200M0 320h1200M0 360h1200M0 400h1200M0 440h1200M0 480h1200M0 520h1200M0 560h1200M0 600h1200" stroke="#ffffff" stroke-width="1"/>
+    <path d="M40 0v630M80 0v630M120 0v630M160 0v630M200 0v630M240 0v630M280 0v630M320 0v630M360 0v630M400 0v630M440 0v630M480 0v630M520 0v630M560 0v630M600 0v630M640 0v630M680 0v630M720 0v630M760 0v630M800 0v630M840 0v630M880 0v630M920 0v630M960 0v630M1000 0v630M1040 0v630M1080 0v630M1120 0v630M1160 0v630" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <polygon points="0,500 200,350 400,480 600,300 800,450 1000,320 1200,480 1200,630 0,630" fill="#2d5a27" opacity="0.5"/>
+
+  <rect x="80" y="100" width="1040" height="430" rx="8" fill="#f5f0e8" stroke="#2d3436" stroke-width="4"/>
+  <rect x="84" y="104" width="1032" height="48" fill="#e8e0d4" stroke="#2d3436" stroke-width="2"/>
+  <circle cx="108" cy="128" r="8" fill="#ff5f57" stroke="#2d3436" stroke-width="2"/>
+  <circle cx="132" cy="128" r="8" fill="#febc2e" stroke="#2d3436" stroke-width="2"/>
+  <circle cx="156" cy="128" r="8" fill="#28c840" stroke="#2d3436" stroke-width="2"/>
+  <text x="600" y="136" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#2d3436">MANSI SABOO - SRE PORTFOLIO</text>
+
+  <g transform="translate(160, 220)">
+    <rect x="60" y="0" width="16" height="140" fill="#326ce5" stroke="#2d3436" stroke-width="2"/>
+    <rect x="0" y="60" width="136" height="16" fill="#326ce5" stroke="#2d3436" stroke-width="2"/>
+    <rect x="20" y="20" width="36" height="36" fill="#326ce5" stroke="#2d3436" stroke-width="2"/>
+    <rect x="80" y="20" width="36" height="36" fill="#326ce5" stroke="#2d3436" stroke-width="2"/>
+    <rect x="20" y="80" width="36" height="36" fill="#326ce5" stroke="#2d3436" stroke-width="2"/>
+    <rect x="80" y="80" width="36" height="36" fill="#326ce5" stroke="#2d3436" stroke-width="2"/>
+    <rect x="30" y="30" width="16" height="16" fill="#ffffff"/>
+    <rect x="90" y="30" width="16" height="16" fill="#ffffff"/>
+    <rect x="30" y="90" width="16" height="16" fill="#ffffff"/>
+    <rect x="90" y="90" width="16" height="16" fill="#ffffff"/>
+  </g>
+
+  <text x="380" y="280" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#2d3436">Mansi Saboo</text>
+  <text x="380" y="340" font-family="monospace" font-size="28" fill="#0984e3">Senior Site Reliability Engineer</text>
+  <text x="380" y="390" font-family="sans-serif" font-size="22" fill="#636e72">Kubernetes | Terraform | GitOps | FedRAMP | AI Ops</text>
+
+  <rect x="380" y="420" width="180" height="52" rx="4" fill="url(#accent)" stroke="#2d3436" stroke-width="2"/>
+  <text x="470" y="452" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#ffffff">7+ Years</text>
+
+  <rect x="580" y="420" width="180" height="52" rx="4" fill="#00b894" stroke="#2d3436" stroke-width="2"/>
+  <text x="670" y="452" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#ffffff">99.9% Uptime</text>
+
+  <rect x="780" y="420" width="220" height="52" rx="4" fill="#6c5ce7" stroke="#2d3436" stroke-width="2"/>
+  <text x="890" y="452" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#ffffff">800 to 70 Vulns</text>
+
+  <text x="600" y="580" text-anchor="middle" font-family="monospace" font-size="22" fill="#ffffff" opacity="0.9">www.mansisaboo.me</text>
+</svg>
