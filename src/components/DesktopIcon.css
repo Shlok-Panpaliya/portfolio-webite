@@ -1,0 +1,41 @@
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 90px;
+  transition: background 0.15s;
+  border-radius: 4px;
+}
+
+.desktop-icon:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.desktop-icon.selected {
+  background: rgba(74, 144, 217, 0.35);
+  outline: 1px dashed rgba(255, 255, 255, 0.6);
+}
+
+.desktop-icon-image {
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.3));
+  transition: transform 0.15s;
+}
+
+.desktop-icon:hover .desktop-icon-image {
+  transform: scale(1.08);
+}
+
+.desktop-icon-label {
+  font-family: "Press Start 2P", monospace;
+  font-size: 7px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 0 #2d3436, -1px -1px 0 #2d3436, 1px -1px 0 #2d3436, -1px 1px 0 #2d3436;
+  line-height: 1.5;
+  word-break: break-word;
+}
