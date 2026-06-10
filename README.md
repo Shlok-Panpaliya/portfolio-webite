@@ -1,13 +1,13 @@
-# Mansi Saboo — Senior SRE Portfolio
+# Shlok Panpaliya — Full Stack Engineer Portfolio
 
-A retro pixel-art desktop-style portfolio website for a Senior Site Reliability Engineer.
+A retro pixel-art desktop-style portfolio website showcasing GRC platform engineering, Chrome extensions, and backend DataSync work.
 
 ## Features
 
 - macOS-inspired desktop UI with menu bar, pixel wallpaper, and dock
-- 11 project icons with detailed case studies (beyond resume depth)
+- 12 project icons with detailed case studies (Scrut Chrome Extension, DataSync GitHub, Access Review, and more)
 - Double-click desktop icons to open project windows
-- Dock shortcuts: Home, Work, Skills, Contact, Resume (PDF download)
+- Dock shortcuts: Home, Work, Impact, Skills, Contact, Resume (PDF download)
 
 ## Quick Start
 

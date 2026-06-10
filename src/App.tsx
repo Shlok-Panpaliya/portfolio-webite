@@ -30,18 +30,12 @@ function AboutContent() {
       </p>
       <p>{profile.summary}</p>
       <div className="about-stats">
-        <div className="stat-box">
-          <span className="stat-value">{profile.yearsExperience}</span>
-          <span className="stat-label">Years Experience</span>
-        </div>
-        <div className="stat-box">
-          <span className="stat-value">{profile.uptime}</span>
-          <span className="stat-label">Uptime SLA</span>
-        </div>
-        <div className="stat-box">
-          <span className="stat-value">800→70</span>
-          <span className="stat-label">Vuln Reduction</span>
-        </div>
+        {profile.stats.map((stat) => (
+          <div key={stat.label} className="stat-box">
+            <span className="stat-value">{stat.value}</span>
+            <span className="stat-label">{stat.label}</span>
+          </div>
+        ))}
       </div>
       <h3>What I Bring</h3>
       <ul>
@@ -73,7 +67,7 @@ function ProjectContent({ project }: { project: Project }) {
         )}
       </h2>
       <p className="experience-meta">
-        {project.company} · {project.role} · {project.period}
+        {project.company} · {project.role}
       </p>
       <p>{project.summary}</p>
       <div className="impact-grid">
@@ -114,9 +108,9 @@ function WorkContent() {
     <>
       <h2>Professional Experience</h2>
       <p>
-        7+ years at Okta driving P1/P2 infrastructure initiatives — from FL16 APAC
-        cell builds to bedrock vulnerability remediation, FedRAMP compliance, and
-        Terraform → Crossplane GitOps migration.
+        Full stack engineer building compliance automation at Scrut — Chrome extensions,
+        queue-driven DataSync workers, PostgreSQL entity graphs, and enterprise GRC
+        features that close six-figure deals.
       </p>
       {experience.map((exp) => (
         <div key={`${exp.company}-${exp.period}`} className="experience-item">
@@ -159,19 +153,17 @@ function LeadershipContent() {
 function SkillsContent() {
   const categories = [
     { title: "Languages", items: skills.languages },
-    { title: "Cloud Platforms", items: skills.cloud },
-    { title: "Infrastructure & Orchestration", items: skills.infrastructure },
-    { title: "Observability", items: skills.observability },
-    { title: "CI/CD & Version Control", items: skills.cicd },
-    { title: "Platforms & Compliance", items: skills.platforms },
+    { title: "Backend & Data", items: skills.backend },
+    { title: "Frontend", items: skills.frontend },
+    { title: "DevOps & Cloud", items: skills.devops },
   ];
 
   return (
     <>
       <h2>Technical Skills</h2>
       <p>
-        Full-stack infrastructure engineer — comfortable from kernel-level Linux
-        debugging to GitOps deployment pipelines and AI-assisted operations.
+        Full stack engineer — from React UIs and Chrome extensions to Node.js
+        workers, PostgreSQL graph schemas, and multi-region AWS deployments.
       </p>
       {categories.map((cat) => (
         <div key={cat.title} className="skill-category">
@@ -194,8 +186,8 @@ function ContactContent() {
     <>
       <h2>Get In Touch</h2>
       <p>
-        Open to Senior / Staff SRE roles at top-tier technology companies. Let's
-        build reliable systems together.
+        Open to full stack and platform engineering roles. Let's build products
+        that matter.
       </p>
       <a href={`mailto:${profile.email}`} className="contact-link">
         ✉ {profile.email}
@@ -203,14 +195,22 @@ function ContactContent() {
       <a href={`tel:${profile.phone.replace(/\s/g, "")}`} className="contact-link">
         ☎ {profile.phone}
       </a>
-      {/* <a
+      <a
         href={profile.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         className="contact-link"
       >
-        in linkedin.com/in/mansi-panpaliya6
-      </a> */}
+        in linkedin.com/in/shlokp762
+      </a>
+      <a
+        href={profile.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-link"
+      >
+        ⌘ github.com/shlokp762
+      </a>
     </>
   );
 }
@@ -256,7 +256,7 @@ function App() {
         openWindow("work", "Experience", <WorkContent />, 640);
         break;
       case "leadership":
-        openWindow("leadership", "Leadership & Impact", <LeadershipContent />, 640);
+        openWindow("leadership", "Engineering Highlights", <LeadershipContent />, 640);
         break;
       case "skills":
         openWindow("skills", "Technical Skills", <SkillsContent />, 580);
@@ -265,7 +265,7 @@ function App() {
         openWindow("contact", "Contact", <ContactContent />, 480);
         break;
       case "resume":
-        window.open("/Resume_Mansi_Saboo.pdf", "_blank");
+        window.open("/Resume_Shlok_Panpaliya.pdf", "_blank");
         break;
     }
   };
