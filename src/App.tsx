@@ -3,7 +3,6 @@ import { MenuBar } from "./components/MenuBar";
 import { Dock } from "./components/Dock";
 import { DesktopIcon } from "./components/DesktopIcon";
 import { Window } from "./components/Window";
-import { SpotlightCard } from "./components/SpotlightCard";
 import {
   profile,
   projects,
@@ -300,7 +299,6 @@ function App() {
       </div>
 
       <main className="desktop-area">
-        <SpotlightCard />
         <div className="desktop-icons-grid">
           {desktopIcons.map((item) => (
             <DesktopIcon
