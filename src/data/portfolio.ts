@@ -24,8 +24,8 @@ export interface Experience {
 
 export const profile = {
   name: "Shlok Panpaliya",
-  title: "Software Engineer (Platform + Full Stack)",
-  tagline: "Platform Engineering · ETL · Postgres Graph Modeling · React · Node.js · GRC",
+  title: "Full Stack Engineer",
+  tagline: "React · Node.js · PostgreSQL · ETL · Chrome Extensions · GRC",
   email: "shlokp762@gmail.com",
   phone: "+91 9359431950",
   linkedin: "https://www.linkedin.com/in/shlokp762",
