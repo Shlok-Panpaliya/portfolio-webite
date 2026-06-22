@@ -186,8 +186,7 @@ function ContactContent() {
     <>
       <h2>Get In Touch</h2>
       <p>
-        Open to full stack and platform engineering roles. Let's build products
-        that matter.
+        Open to Backend and full stack roles. If you're interviewing for backend / full stack roles, I'm especially excited to chat.
       </p>
       <a href={`mailto:${profile.email}`} className="contact-link">
         ✉ {profile.email}
@@ -309,10 +308,6 @@ function App() {
               onOpen={item.action}
             />
           ))}
-        </div>
-
-        <div className="desktop-tip" role="note">
-          TIP ▸ double-click any icon to open
         </div>
       </main>
 

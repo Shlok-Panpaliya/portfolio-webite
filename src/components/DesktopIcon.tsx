@@ -12,14 +12,12 @@ export function DesktopIcon({ label, icon, onOpen, selected }: DesktopIconProps)
   return (
     <button
       className={`desktop-icon ${selected ? "selected" : ""}`}
-      onDoubleClick={onOpen}
       onClick={(e) => {
-        if (e.detail === 1) {
-          (e.currentTarget as HTMLButtonElement).classList.add("selected");
-          document.querySelectorAll(".desktop-icon").forEach((el) => {
-            if (el !== e.currentTarget) el.classList.remove("selected");
-          });
-        }
+        (e.currentTarget as HTMLButtonElement).classList.add("selected");
+        document.querySelectorAll(".desktop-icon").forEach((el) => {
+          if (el !== e.currentTarget) el.classList.remove("selected");
+        });
+        onOpen();
       }}
       aria-label={`Open ${label}`}
     >

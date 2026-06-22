@@ -24,77 +24,78 @@ export interface Experience {
 
 export const profile = {
   name: "Shlok Panpaliya",
-  title: "Full Stack Engineer",
-  tagline: "React · Node.js · PostgreSQL · Chrome Extensions · GRC Platform Engineering",
+  title: "Software Engineer (Platform + Full Stack)",
+  tagline: "Platform Engineering · ETL · Postgres Graph Modeling · React · Node.js · GRC",
   email: "shlokp762@gmail.com",
   phone: "+91 9359431950",
   linkedin: "https://www.linkedin.com/in/shlokp762",
   github: "https://github.com/shlokp762",
   location: "India · Remote-friendly",
-  yearsExperience: "3+",
-  summary: `Full Stack Engineer at Scrut Automation, a compliance automation (GRC) platform. I architect and ship production systems end-to-end — from Manifest V3 Chrome extensions to queue-driven backend workers, PostgreSQL entity graphs, and multi-region AWS deployments. Passionate about core engineering fundamentals: scalable architecture, resilient state management, and products that close enterprise deals.`,
+  yearsExperience: "4+",
+  summary: `Software Engineer with 4+ years of experience architecting distributed systems and queue-driven ETL pipelines. At Scrut Automation (GRC), I have build foundational backend systems that power enterprise modules like Access Reviews, Vulnerability Management, Automated Evidence Collection, and Asset Management — backed by PostgreSQL graph data modeling for deep-hierarchy traversal and audit-ready reporting.`,
   stats: [
-    { value: "2+", label: "Years at Scrut" },
-    { value: "$500k+", label: "Deals Enabled" },
-    { value: "100%", label: "Sprint Completion Rate with minimal bugs" },
+    { value: "40+", label: "Integrations Powered" },
+    { value: "$250k+", label: "Enterprise Deals Unblocked" },
+    { value: "90%", label: "Faster Upload Pipeline" },
   ],
   aboutExtended: [
-    "Full Stack Engineer at Scrut Automation — building compliance automation for SOC 2, ISO 27001, and enterprise GRC workflows.",
-    "Owner of the Scrut Automation Chrome Extension — Manifest V3 architecture spanning popup, service worker, and content scripts with autonomous CI/CD to Chrome Web Store.",
-    "Backend engineer on Scrut DataSync Pipeline — SQS-driven worker syncing integration data like GitHub, AWS, Snyk, and others into a PostgreSQL entity graph which is used by multiple modules under Scrut's platform as a source of truth.",
-    "Architected the Access Review module that centralized identity management across applications — directly enabling $100k+ in enterprise contract closures.",
-    "Shipped major platform features: Audit Snapshot Sync, A-Lign integration exports, Trust Vault customization, Monitor data source-of-truth, and customizable Risk Forms.",
-    "Previously founding engineer at PropReturns — 90% faster property uploads via Python/gspread sync pipelines and AWS image processing with Sharp/Jimp.",
-    "BTech Computer Science, IIIT Nagpur (2018–2022).",
+    "Full-stack engineer at Scrut Automation — building compliance automation for SOC 2 / ISO 27001 and enterprise GRC workflows.",
+    "Architected the DataSync foundation: queue-driven ETL with a dependency-graph execution model syncing data across 40+ third‑party integrations into a Postgres entity graph (entity/relationship tables).",
+    "Built Access Reviews infrastructure: centralized identities across apps, one-click verification via API sync, and audit-ready reporting — unblocked $100k+ in enterprise deals.",
+    "Shipped Automated Evidence Collection (Scrut Monitor) pipelines: scheduled evidence pulls + provenance so audit artifacts stay authentic and reproducible.",
+    "Designed vulnerability ingestion + SLA tracking by syncing threat data from AWS Inspector, Snyk, and GitHub Dependabot to prioritize critical CVEs.",
+    "Owner of Scrut Automation Chrome Extension — Manifest V3 popup/service worker/content scripts with autonomous CI/CD to Chrome Web Store.",
+    "Previously founding engineer at PropReturns — built a bidirectional Sheets ↔ MongoDB sync pipeline cutting property upload time by 90%."
   ],
 };
 
 export const leadership = {
   title: "Engineering Highlights",
   summary:
-    "End-to-end ownership across frontend, backend, integrations, and deployment — with a focus on enterprise-grade reliability, multi-region scale, and measurable business impact.",
+    "What I build is interviewable: systems design (queues + DAG), data modeling (Postgres graphs), integration hardening (rate limits, retries), and product impact (audit automation and revenue enablement).",
   highlights: [
     {
       area: "Product Ownership",
       points: [
-        "Owned the Scrut Automation Chrome Extension from architecture through Chrome Web Store publish — popup UI, background pipelines, content-script form injection, and zero-touch CI/CD.",
-        "Designed and delivered the Scrut DataSync Pipeline — a SQS-driven worker syncing integration data like GitHub, AWS, Snyk, and others into a PostgreSQL entity graph which is used by multiple modules under Scrut's platform as a source of truth.",
-        "Delivered Access Review module that fulfilled key customer compliance commitments and unlocked $100k+ in enterprise revenue.",
+        "Designed the DataSync foundation used by Access Reviews, Vulnerability Management, Evidence Collection, Monitors, and Asset Management — 40+ integrations, multi-tenant, queue-driven ETL.",
+        "Built Access Review (UAR) infrastructure replacing spreadsheet reviews with real-time API sync, one-click verification, and audit-ready exports — unblocked $100k+ enterprise deals.",
+        "Owned the Scrut Automation Chrome Extension end-to-end: MV3 architecture, questionnaire scanning, AI autofill UX, and autonomous Chrome Web Store deployment.",
       ],
     },
     {
       area: "Architecture & Scale",
       points: [
         "Modeled compliance data as a Postgres-backed entity graph (entity + relationship tables) with cycle-safe edges and recursive cascade delete — no dedicated graph DB overhead.",
-        "Implemented a multi-tenant architecture with per-tenant isolated Postgres databases — pools created/destroyed per sync message",
-        "Multi-region auth resolution across 4 Scrut production regions with cookie-based SSO reuse and token-probing fallback.",
+        "Built queue-driven ETL with dependency-graph execution so steps run wave-by-wave based on prerequisites, keeping syncs deterministic and restartable.",
+        "Hardened integration ingestion with pagination, rate-limit handling, and backpressure patterns for high-volume GitHub/AWS datasets.",
       ],
     },
     {
       area: "DevOps & Delivery",
       points: [
         "Fully autonomous Chrome Web Store pipeline — build, version bump, zip, upload, and publish on git push.",
-        "A-lign auditor workflow migration to Scrut's platform — enabling auditors to work within Scrut while maintaining compatibility with A-Lign audit processes and data formats."
+        "Shipped Auditor workflow migration (A‑Lign): remapped controls/artifacts and preserved compatibility with existing audit processes during transition.",
       ],
     },
   ],
 };
 
 export const skills = {
-  languages: ["JavaScript", "Python", "TypeScript", "C++"],
+  languages: ["Python", "JavaScript", "TypeScript", "C++"],
   backend: [
     "Node.js",
-    "Express",
     "PostgreSQL",
     "MongoDB",
-    "AWS (SQS, ECS, Secrets Manager, SSM)"
+    "RabbitMQ",
+    "AWS",
   ],
   frontend: [
     "React",
     "Next.js",
-    "Tailwind CSS"
+    "Tailwind CSS",
   ],
-  devops: ["Docker", "GitHub Actions", "AWS CodeBuild", "ECR", "ECS", "Sentry"],
+  architecture: ["Distributed Systems", "Queue-driven ETL", "Multi-tenant Systems", "API Rate Limiting", "Postgres Graph Modeling"],
+  devops: ["Docker", "GitHub Actions", "ECR", "ECS", "Sentry"],
 };
 
 export const education = [
@@ -113,19 +114,19 @@ export const experience: Experience[] = [
     location: "Remote",
     period: "March 2024 – Present",
     highlights: [
-      "Engineered scalable DataSync worker services for GitHub, AWS, Snyk, and other integrations — ingesting repos, PRs, commits, and security findings into PostgreSQL.",
-      "Designed a graph-like relational schema (entity + relationship tables) for deep-hierarchy compliance data without a dedicated graph database.",
-      "Architected the Access Review module — centralized user identity management across applications, enabling $100k+ in enterprise contract closures.",
-      "Owned the Scrut Automation Chrome Extension end-to-end: Manifest V3 architecture, AI questionnaire autofill, multi-region auth, and autonomous Chrome Web Store CI/CD.",
-      "Shipped Audit Snapshot Sync, A-Lign test export, Trust Vault display ordering, Monitor source-of-truth, and customizable Risk Forms.",
-      "Built GitHub sync steps including dual-path branch protection (classic + rulesets), PR delta sync with concurrent review fetching, and Dependabot alert ingestion.",
+      "Architected the foundational DataSync engine powering 40+ integrations and multiple GRC modules (Monitors, Access Reviews, Vulnerability Management, Evidence Collection, Asset Management).",
+      "Built a queue-driven ETL pipeline with dependency-graph execution and a Postgres graph model (entity/relationship tables) for deep-hierarchy traversal.",
+      "Engineered Access Reviews (UAR): centralized identities across apps, real-time API sync + one-click verification, and audit-ready reporting — unblocked $100k+ enterprise contracts.",
+      "Built Automated Evidence Collection (Scrut Monitor): scheduled evidence pulls with provenance/source-of-truth metadata to reduce manual audit workload.",
+      "Designed Vulnerability Management ingestion + SLA tracking by syncing findings from AWS Inspector, Snyk, and GitHub Dependabot to prioritize critical CVEs.",
+      "Owned Scrut Automation Chrome Extension: MV3 architecture, cross-site questionnaire parsing + export engine, streaming UX, and autonomous CI/CD to Chrome Web Store.",
     ],
   },
   {
     company: "PropReturns",
     role: "Founding Full Stack Engineer",
     location: "India",
-    period: "June 2022 – 2023",
+    period: "June 2022 – March 2024",
     highlights: [
       "Reduced property upload time by 90% with a Python + gspread sync pipeline between Google Sheets and MongoDB.",
       "Built AWS image processing engine (Jimp + Sharp) — automated resizing into five formats with watermarking for web and mobile.",
@@ -164,60 +165,62 @@ export const projects: Project[] = [
     priority: "P1",
     tags: ["Chrome Extension", "Manifest V3", "React", "AI/ML", "CI/CD", "GRC"],
     summary:
-      "A Manifest V3 Chrome extension that bridges any security questionnaire webpage with Scrut's AI-powered answer engine — import questions from UpGuard, Google Forms, or any portal, get AI-generated answers from policy docs, and export back into the original form without leaving the browser.",
+      "A Manifest V3 Chrome extension that turns security questionnaires into a fast, in-browser workflow: scan questions from any portal (UpGuard, Google Forms, custom vendor sites), trigger AI-generated answers from policy knowledge, and export back into the original form — without leaving the browser.",
     impact: [
       { metric: "MV3", label: "Service worker arch" },
       { metric: "4", label: "Prod regions" },
-      { metric: "0-touch", label: "CWS deploy" },
+      { metric: "0‑touch", label: "CWS deploy" },
     ],
     details: [
       "Three-layer architecture: React popup ↔ background service worker ↔ content script — all communication via chrome.runtime.sendMessage.",
       "Cookie-based SSO reuse — reads Scrut session cookies across 4 production regions with token-probing fallback; no duplicate login UX.",
       "Background scan pipeline runs popup-independently: inject HTML → upload → parse questions → enforce pricing tier limits → persist state in chrome.storage.local.",
       "AI autofill with SSE streaming (Draft → In Progress → Auto Filled → Completed); stream reconnects if popup closes mid-autofill.",
-      "Export engine uses fuzzy token matching + native value setters to bypass React controlled inputs on any webpage.",
       "Context menu \"Add to Scrut Automation\" captures selected text with DOMPurify sanitization — works even when popup is closed.",
       "Autonomous CI/CD: GitHub Actions build → version bump → zip → Chrome Web Store upload & publish on push to production.",
+      "Context: security questionnaires often overlap heavily (industry estimates ~60–90% overlap); the product goal is to compress response time and improve consistency. See `https://www.scrut.io/post/breeze-through-security-questionnaires-with-kai`.",
     ],
     techStack: [
       "React 18",
       "Manifest V3",
       "Tailwind CSS",
       "PrimeReact",
-      "Zustand",
       "SSE",
       "DOMPurify",
       "GitHub Actions",
     ],
   },
   {
-    id: "datasync-github",
-    title: "Scrut DataSync — GitHub Worker",
+    id: "datasync-engine",
+    title: "DataSync Foundation — Queue-driven ETL + Postgres Graph",
     shortLabel: "DataSync",
     icon: "pipeline",
     company: "Scrut Automation",
     period: "2024 – Present",
-    role: "Backend Engineer",
+    role: "Platform Engineer",
     priority: "P1",
-    tags: ["Node.js", "SQS", "PostgreSQL", "Octokit", "ECS", "SOC 2"],
+    tags: ["ETL", "Distributed Systems", "Node.js", "SQS", "PostgreSQL", "Multi-tenant"],
     summary:
-      "A queue-driven, multi-tenant worker syncing integration data like GitHub, AWS, Snyk, and others into a PostgreSQL entity graph which is used by multiple modules under Scrut's platform as a source of truth.",
+      "A queue-driven, dependency-graph ETL engine that syncs data across 40+ integrations into a Postgres-backed entity graph — powering Access Reviews, Vulnerability Management, Evidence Collection (Scrut Monitor), Asset Inventory, and Monitors as a shared source of truth.",
     impact: [
-     {metric: "$500k+", label: "Deals enabled"},
-      { metric: "Multi-tenant", label: "Isolated Postgres databases" },
-      {metric: "Less than 1%",label: "Dead Letter Queue messages"}
+      { metric: "40+", label: "Integrations supported" },
+      { metric: "Graph", label: "Entity + relationship model" },
+      { metric: "DAG", label: "Dependency-graph execution" },
     ],
     details: [
-      "Designed and delivered the Scrut DataSync Pipeline — a SQS-driven worker syncing integration data like GitHub, AWS, Snyk, and others into a PostgreSQL entity graph which is used by multiple modules under Scrut's platform as a source of truth.",
-      "Implemented a multi-tenant architecture with per-tenant isolated Postgres databases — pools created/destroyed per sync message",
-      "Works in a non-blocking manner - dependency graph syncs the data for each step in the pipeline based on the dependencies between the steps.",
+      "Queue-driven ingestion (RabbitMQ) with deterministic dependency-graph execution to run sync steps in the correct order and support partial reruns.",
+      "Postgres graph model using `entity` (nodes) + `relationship` (edges) tables to represent deep hierarchies (org → repos → branches/PRs/findings/users) and query them via recursive SQL.",
+      "Multi-tenant data isolation with per-tenant DB lifecycle and connection pools managed per sync job.",
+      "Engineering focus: rate-limit handling, pagination, safe retries, and data deletion semantics (soft-delete + cascades) so downstream modules stay consistent.",
+      "Reference concept: Postgres as a graph database pattern (entity/relationship) — `https://kushankurdas.medium.com/using-postgresql-as-a-graph-database-a-simple-approach-for-beginners-c76d3bc9e82c`.",
     ],
     techStack: [
       "Node.js",
       "AWS SQS",
-      "AWS Secrets Manager",
-      "AWS DynamoDB",
+      "RabbitMQ",
       "PostgreSQL",
+      "AWS Secrets Manager",
+      "Docker",
     ],
   },
   {
@@ -234,15 +237,85 @@ export const projects: Project[] = [
       "Architected a critical Access Review module that centralized user identity management across integrated applications — directly enabling the closure of $100k+ in enterprise contracts by fulfilling key customer compliance commitments.",
     impact: [
       { metric: "$100k+", label: "Deals enabled" },
-      { metric: "Central", label: "Identity hub" },
-      { metric: "SOC 2", label: "Audit-ready" },
+      { metric: "1‑click", label: "Validation workflow" },
+      { metric: "Audit‑ready", label: "Exportable reports" },
     ],
     details: [
       "Unified access review workflows across multiple integrated SaaS applications in a single compliance platform.",
-      "Enabled enterprise customers to meet periodic access certification requirements — a common SOC 2 and ISO 27001 control.",
+      "Replaced spreadsheet-based reviews with real-time API synchronization and reviewer/approver workflows aligned to SOC 2 / ISO 27001 access certification controls.",
+      "Industry context: privileged credential misuse is a major breach vector; see `https://www.scrut.io/post/access-reviews`.",
       "Directly tied to revenue — fulfilled contractual compliance commitments that blocked deal closure.",
     ],
     techStack: ["Node.js", "React", "PostgreSQL", "AWS"],
+  },
+  {
+    id: "vuln-mgmt",
+    title: "Vulnerability Management — Ingestion + SLA Tracking",
+    shortLabel: "Vuln Mgmt",
+    icon: "security",
+    company: "Scrut Automation",
+    period: "2024 – 2025",
+    role: "Backend Engineer",
+    tags: ["Vulnerabilities", "CVEs", "Snyk", "AWS Inspector", "Dependabot", "SLA"],
+    summary:
+      "Built the vulnerability ingestion + tracking backbone: sync findings from multiple scanners, normalize them into a single register, attach SLA policies, and drive risk-first remediation workflows tied back to assets and compliance.",
+    impact: [
+      { metric: "Multi‑source", label: "Scanner aggregation" },
+      { metric: "SLA", label: "Remediation tracking" },
+      { metric: "Risk‑first", label: "Prioritization" },
+    ],
+    details: [
+      "Ingests findings from AWS Inspector, Snyk, and GitHub (Dependabot) into a unified vulnerability register.",
+      "Automates severity-based remediation SLAs and surfaces overdue risk to security teams.",
+      "Product context: Scrut’s unified VM approach reduces fragmentation and improves prioritization — `https://www.scrut.io/post/reinforce-your-risk-posture-with-scruts-vulnerability-management`.",
+    ],
+    techStack: ["Node.js", "PostgreSQL", "AWS"],
+  },
+  {
+    id: "scrut-monitor-evidence",
+    title: "Scrut Monitor — Automated Evidence Collection",
+    shortLabel: "Scrut Monitor",
+    icon: "compliance",
+    company: "Scrut Automation",
+    period: "2024 – 2025",
+    role: "Backend Engineer",
+    tags: ["Evidence", "Audits", "Automation", "Integrations"],
+    summary:
+      "Built the evidence collection pipeline that pulls artifacts from integrations on a schedule and attaches provenance/source-of-truth metadata — so compliance teams stay audit-ready without spreadsheet chases.",
+    impact: [
+      { metric: "Scheduled", label: "Interval pulls" },
+      { metric: "Provenance", label: "Source-of-truth attached" },
+      { metric: "Always‑on", label: "Audit readiness" },
+    ],
+    details: [
+      "Automates recurring evidence pulls and structures artifacts for auditor-friendly workflows.",
+      "Health monitoring + failure visibility so missing evidence is caught early, not during audit week.",
+      "Product context: evidence automation improves speed/accuracy/consistency — `https://www.scrut.io/post/harnessing-automation-for-evidence-management-with-scrut-monitor`.",
+    ],
+    techStack: ["Node.js", "PostgreSQL", "AWS SQS", "Integrations"],
+  },
+  {
+    id: "asset-management",
+    title: "Asset Management — Inventory + Risk Context",
+    shortLabel: "Assets Management",
+    icon: "tenant",
+    company: "Scrut Automation",
+    period: "2024 – 2025",
+    role: "Backend Engineer",
+    tags: ["Asset Inventory", "Cloud", "Identity", "Risk"],
+    summary:
+      "Extended the DataSync foundation to support cybersecurity asset inventory at scale — mapping assets, identities, and configurations into a single, continuously updated view for risk and compliance workflows.",
+    impact: [
+      { metric: "Inventory", label: "Real-time visibility" },
+      { metric: "Context", label: "Relationships in graph" },
+      { metric: "Compliance", label: "ISO/NIST/SOC 2 ready" },
+    ],
+    details: [
+      "Tracks assets across cloud resources, apps, and identities; connects them to vulnerabilities and controls for audit workflows.",
+      "Industry context: unknown/unmanaged assets drive breaches; see `https://www.scrut.io/post/cyber-asset-management-challenges`.",
+      "Background on why CAM matters — `https://www.scrut.io/post/cybersecurity-asset-management`.",
+    ],
+    techStack: ["Node.js", "PostgreSQL", "AWS", "Integrations"],
   },
   {
     id: "audit-snapshot-sync",
@@ -265,7 +338,7 @@ export const projects: Project[] = [
       "Ensures auditors see a consistent compliance posture snapshot even as underlying monitor data continues to update.",
       "Critical for enterprise audit cycles where evidence integrity and reproducibility are contractual requirements.",
     ],
-    techStack: ["Node.js", "PostgreSQL", "AWS SQS", "React"],
+    techStack: ["Node.js", "PostgreSQL", "AWS", "React"],
   },
   {
     id: "align-auditor-migration",
@@ -288,30 +361,7 @@ export const projects: Project[] = [
       "Ensured backward compatibility with existing A-Lign customer audit cycles during transition.",
       "Collaborated across frontend and backend to unify auditor experience without losing A-Lign-specific compliance semantics.",
     ],
-    techStack: ["React", "Node.js", "PostgreSQL", "REST APIs"],
-  },
-  {
-    id: "align-test-export",
-    title: "A-Lign Test Export",
-    shortLabel: "A-Lign Export",
-    icon: "compliance",
-    company: "Scrut Automation",
-    period: "2024 – 2025",
-    role: "Full Stack Engineer",
-    tags: ["A-Lign", "Export", "Compliance Tests", "Integration"],
-    summary:
-      "Built A-Lign Test Export — generating compliance test results in A-Lign-compatible format so customers can feed Scrut monitor outcomes directly into their A-Lign audit workflows.",
-    impact: [
-      { metric: "Export", label: "A-Lign format" },
-      { metric: "Tests", label: "Monitor mapping" },
-      { metric: "Audit", label: "Workflow bridge" },
-    ],
-    details: [
-      "Designed export pipeline mapping Scrut compliance monitor test results to A-Lign expected schemas.",
-      "Enabled bi-directional GRC workflow — Scrut as source of truth for continuous monitoring, A-Lign for formal audit delivery.",
-      "Handled edge cases in test status mapping, evidence attachments, and control framework alignment.",
-    ],
-    techStack: ["Node.js", "React", "PostgreSQL", "JSON Schema"],
+    techStack: ["React", "Node.js", "AWS"],
   },
   {
     id: "trust-vault-order",
@@ -334,30 +384,7 @@ export const projects: Project[] = [
       "Persisted per-tenant display preferences with immediate preview on the public trust page.",
       "Enterprise customers use Trust Vault as their security marketing page — display order directly impacts buyer perception.",
     ],
-    techStack: ["React", "Node.js", "Dynamodb"],
-  },
-  {
-    id: "monitor-source-of-truth",
-    title: "Monitor Data Source of Truth",
-    shortLabel: "Monitor SOT",
-    icon: "metrics",
-    company: "Scrut Automation",
-    period: "2024",
-    role: "Backend Engineer",
-    tags: ["Monitors", "Data Model", "GRC", "Architecture"],
-    summary:
-      "Established the canonical source of truth for Scrut Monitor data — resolving inconsistencies across integration slaves, compliance tests, and dashboard views so all monitor outcomes derive from a single authoritative data layer.",
-    impact: [
-      { metric: "1", label: "Source of truth" },
-      { metric: "Sync", label: "Data consistency" },
-      { metric: "Monitors", label: "Audit accuracy" },
-    ],
-    details: [
-      "Defined ownership boundaries between DataSync slaves, VM compliance service, and monitor evaluation engine.",
-      "Eliminated conflicting monitor statuses caused by stale or duplicated data across integration pipelines.",
-      "Foundation for reliable continuous compliance monitoring — monitors drive automated SOC 2 control evaluation.",
-    ],
-    techStack: ["Node.js", "PostgreSQL", "AWS SQS", "SNS"],
+    techStack: ["React", "Node.js", "AWS DynamoDB"],
   },
   {
     id: "risk-form",
@@ -396,7 +423,6 @@ export const projects: Project[] = [
     impact: [
       { metric: "Live", label: "landaxis.in" },
       { metric: "Data", label: "Ownership viz" },
-      { metric: "Investor", label: "Decision support" },
     ],
     details: [
       "Aggregates public land records and ownership data into an interactive visualization layer.",
@@ -441,8 +467,7 @@ export const projects: Project[] = [
       "Reduced property upload time by 90% by engineering a custom data synchronization pipeline using Python and gspread — eliminating manual verification and maintaining consistency between Google Sheets and MongoDB.",
     impact: [
       { metric: "90%", label: "Upload time cut" },
-      { metric: "Auto", label: "Sheet ↔ DB sync" },
-      { metric: "0", label: "Manual verification" },
+      { metric: "Auto", label: "Sheet ↔ DB sync" }
     ],
     details: [
       "Bidirectional sync between operations team's Google Sheets and MongoDB property database.",
@@ -455,6 +480,7 @@ export const projects: Project[] = [
 
 export const dockItems = [
   { id: "home", label: "Home", icon: "home", action: "home" as const },
+  { id: "work", label: "Work", icon: "work", action: "work" as const },
   { id: "leadership", label: "Impact", icon: "leadership", action: "leadership" as const },
   { id: "skills", label: "Skills", icon: "skills", action: "skills" as const },
   { id: "contact", label: "Contact", icon: "contact", action: "contact" as const },
