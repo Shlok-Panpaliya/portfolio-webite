@@ -29,7 +29,7 @@ export const profile = {
   email: "shlokp762@gmail.com",
   phone: "+91 9359431950",
   linkedin: "https://www.linkedin.com/in/shlokp762",
-  github: "https://github.com/shlokp762",
+  github: "https://github.com/Shlok-Panpaliya",
   location: "India · Remote-friendly",
   yearsExperience: "4+",
   summary: `Software Engineer with 4+ years of experience architecting distributed systems and queue-driven ETL pipelines. At Scrut Automation (GRC), I have build foundational backend systems that power enterprise modules like Access Reviews, Vulnerability Management, Automated Evidence Collection, and Asset Management — backed by PostgreSQL graph data modeling for deep-hierarchy traversal and audit-ready reporting.`,
