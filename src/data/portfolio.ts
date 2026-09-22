@@ -24,56 +24,56 @@ export interface Experience {
 
 export const profile = {
   name: "Shlok Panpaliya",
-  title: "Full Stack Engineer",
-  tagline: "React · Node.js · PostgreSQL · ETL · Chrome Extensions · GRC",
+  title: "Backend & Full Stack Engineer",
+  tagline: "Distributed Systems · Backend Engineering · Data Pipelines · Cloud · Full Stack",
   email: "shlokp762@gmail.com",
   phone: "+91 9359431950",
   linkedin: "https://www.linkedin.com/in/shlokp762",
   github: "https://github.com/Shlok-Panpaliya",
-  location: "India · Remote-friendly",
+  location: "India · Open to Remote",
   yearsExperience: "4+",
-  summary: `Software Engineer with 4+ years of experience architecting distributed systems and queue-driven ETL pipelines. At Scrut Automation (GRC), I have build foundational backend systems that power enterprise modules like Access Reviews, Vulnerability Management, Automated Evidence Collection, and Asset Management — backed by PostgreSQL graph data modeling for deep-hierarchy traversal and audit-ready reporting.`,
+  summary: "Software Engineer with 4+ years of experience building distributed backend systems, data pipelines, integration platforms, and full-stack products for enterprise SaaS. Currently building the infrastructure behind multiple GRC products at Scrut Automation, with a focus on asynchronous processing, data modeling, integrations, and reliability.",
   stats: [
     { value: "40+", label: "Integrations Powered" },
-    { value: "$250k+", label: "Enterprise Deals Unblocked" },
+    { value: "$200k+", label: "Enterprise Deals Enabled" },
     { value: "90%", label: "Faster Upload Pipeline" },
   ],
   aboutExtended: [
-    "Full-stack engineer at Scrut Automation — building compliance automation for SOC 2 / ISO 27001 and enterprise GRC workflows.",
-    "Architected the DataSync foundation: queue-driven ETL with a dependency-graph execution model syncing data across 40+ third‑party integrations into a Postgres entity graph (entity/relationship tables).",
-    "Built Access Reviews infrastructure: centralized identities across apps, one-click verification via API sync, and audit-ready reporting — unblocked $100k+ in enterprise deals.",
-    "Shipped Automated Evidence Collection (Scrut Monitor) pipelines: scheduled evidence pulls + provenance so audit artifacts stay authentic and reproducible.",
-    "Designed vulnerability ingestion + SLA tracking by syncing threat data from AWS Inspector, Snyk, and GitHub Dependabot to prioritize critical CVEs.",
-    "Owner of Scrut Automation Chrome Extension — Manifest V3 popup/service worker/content scripts with autonomous CI/CD to Chrome Web Store.",
-    "Previously founding engineer at PropReturns — built a bidirectional Sheets ↔ MongoDB sync pipeline cutting property upload time by 90%."
+    "Software Development Engineer at Scrut Automation — building backend and full-stack systems for enterprise GRC and compliance automation.",
+    "Architected the DataSync foundation: queue-driven ETL with dependency-graph execution, syncing data across 40+ third-party integrations into a Postgres entity graph (entity/relationship tables).",
+    "Built Access Reviews infrastructure: centralized identities across applications, real-time API synchronization, one-click verification, and audit-ready reporting — enabling $100k+ in enterprise deals.",
+    "Built Automated Evidence Collection pipelines with scheduled evidence pulls and provenance metadata so audit artifacts remain traceable and reproducible.",
+    "Designed vulnerability ingestion and remediation SLA tracking by synchronizing findings from AWS Inspector, Snyk, and GitHub Dependabot.",
+    "Own the Scrut Automation Chrome Extension end-to-end — Manifest V3 architecture, browser workflows, AI-assisted autofill, and autonomous CI/CD to the Chrome Web Store.",
+    "Previously a founding engineer at PropReturns — built automation and data synchronization systems that reduced property upload time by 90%."
   ],
 };
 
 export const leadership = {
-  title: "Engineering Highlights",
+  title: "Engineering Focus",
   summary:
-    "What I build is interviewable: systems design (queues + DAG), data modeling (Postgres graphs), integration hardening (rate limits, retries), and product impact (audit automation and revenue enablement).",
+    "I focus on practical engineering problems: distributed processing, data modeling, integration reliability, cloud delivery, and product impact.",
   highlights: [
     {
       area: "Product Ownership",
       points: [
-        "Designed the DataSync foundation used by Access Reviews, Vulnerability Management, Evidence Collection, Monitors, and Asset Management — 40+ integrations, multi-tenant, queue-driven ETL.",
-        "Built Access Review (UAR) infrastructure replacing spreadsheet reviews with real-time API sync, one-click verification, and audit-ready exports — unblocked $100k+ enterprise deals.",
-        "Owned the Scrut Automation Chrome Extension end-to-end: MV3 architecture, questionnaire scanning, AI autofill UX, and autonomous Chrome Web Store deployment.",
+        "Designed the DataSync foundation used by Access Reviews, Vulnerability Management, Evidence Collection, Monitors, and Asset Management — 40+ integrations with multi-tenant, queue-driven ETL.",
+        "Built Access Review infrastructure replacing spreadsheet-based reviews with real-time API synchronization, one-click verification, and audit-ready exports — enabling $100k+ enterprise deals.",
+        "Owned the Scrut Automation Chrome Extension end-to-end: MV3 architecture, questionnaire scanning, AI-assisted autofill UX, and autonomous Chrome Web Store deployment.",
       ],
     },
     {
       area: "Architecture & Scale",
       points: [
-        "Modeled compliance data as a Postgres-backed entity graph (entity + relationship tables) with cycle-safe edges and recursive cascade delete — no dedicated graph DB overhead.",
-        "Built queue-driven ETL with dependency-graph execution so steps run wave-by-wave based on prerequisites, keeping syncs deterministic and restartable.",
-        "Hardened integration ingestion with pagination, rate-limit handling, and backpressure patterns for high-volume GitHub/AWS datasets.",
+        "Modeled compliance data as a Postgres-backed entity graph using entity + relationship tables, supporting deep hierarchy traversal without introducing a dedicated graph database.",
+        "Built queue-driven ETL with dependency-graph execution so dependent steps run in prerequisite order, keeping synchronization deterministic and restartable.",
+        "Hardened integration ingestion with pagination, rate-limit handling, retries, and backpressure patterns for high-volume GitHub and AWS datasets.",
       ],
     },
     {
       area: "DevOps & Delivery",
       points: [
-        "Fully autonomous Chrome Web Store pipeline — build, version bump, zip, upload, and publish on git push.",
+        "Built an autonomous Chrome Web Store delivery pipeline — build, version bump, package, upload, and publish on production git push.",
         "Shipped Auditor workflow migration (A‑Lign): remapped controls/artifacts and preserved compatibility with existing audit processes during transition.",
       ],
     },
@@ -84,6 +84,7 @@ export const skills = {
   languages: ["Python", "JavaScript", "TypeScript", "C++"],
   backend: [
     "Node.js",
+    "Python",
     "PostgreSQL",
     "MongoDB",
     "RabbitMQ",
@@ -94,7 +95,7 @@ export const skills = {
     "Next.js",
     "Tailwind CSS",
   ],
-  architecture: ["Distributed Systems", "Queue-driven ETL", "Multi-tenant Systems", "API Rate Limiting", "Postgres Graph Modeling"],
+  architecture: ["Distributed Systems", "Queue-driven ETL", "Multi-tenant Systems", "API Rate Limiting", "Postgres Graph Modeling", "Async Processing"],
   devops: ["Docker", "GitHub Actions", "ECR", "ECS", "Sentry"],
 };
 
@@ -192,7 +193,7 @@ export const projects: Project[] = [
   },
   {
     id: "datasync-engine",
-    title: "DataSync Foundation — Queue-driven ETL + Postgres Graph",
+    title: "DataSync Foundation — Distributed ETL + Postgres Graph",
     shortLabel: "DataSync",
     icon: "pipeline",
     company: "Scrut Automation",
@@ -201,7 +202,7 @@ export const projects: Project[] = [
     priority: "P1",
     tags: ["ETL", "Distributed Systems", "Node.js", "SQS", "PostgreSQL", "Multi-tenant"],
     summary:
-      "A queue-driven, dependency-graph ETL engine that syncs data across 40+ integrations into a Postgres-backed entity graph — powering Access Reviews, Vulnerability Management, Evidence Collection (Scrut Monitor), Asset Inventory, and Monitors as a shared source of truth.",
+      "A queue-driven, dependency-graph ETL engine that synchronizes data across 40+ integrations into a Postgres-backed entity graph — powering multiple GRC modules from a shared source of truth.",
     impact: [
       { metric: "40+", label: "Integrations supported" },
       { metric: "Graph", label: "Entity + relationship model" },
@@ -411,22 +412,23 @@ export const projects: Project[] = [
   },
   {
     id: "land-axis",
-    title: "Land Axis — Real Estate Transparency",
+    title: "Land Axis — Real Estate Data Platform",
+
     shortLabel: "Land Axis",
     icon: "globe",
     company: "Personal Project",
     period: "December 2025",
     role: "Creator",
-    tags: ["Next.js", "Data Viz", "Real Estate", "Full Stack"],
+    tags: ["Next.js", "Data Viz", "Real Estate", "Full Stack", "Data Platform"],
     summary:
-      "Developed Land Axis — a real estate transparency platform aggregating and visualizing land ownership and distribution data, empowering investors with granular insights for data-driven decision-making.",
+      "Developed Land Axis — a full-stack real estate data platform aggregating and visualizing land ownership and distribution data for geographic and ownership analysis.",
     impact: [
       { metric: "Live", label: "landaxis.in" },
       { metric: "Data", label: "Ownership viz" },
     ],
     details: [
       "Aggregates public land records and ownership data into an interactive visualization layer.",
-      "Built for investors who need transparency beyond traditional property listing portals.",
+      "Designed the platform around structured land data, geographic relationships, and ownership information rather than traditional property-listing workflows.",
       "Full-stack deployment with optimized data presentation for geographic and ownership patterns.",
     ],
     techStack: ["Next.js", "React", "TypeScript", "Data Visualization"],
@@ -441,14 +443,14 @@ export const projects: Project[] = [
     role: "Creator",
     tags: ["Trading", "Real-time", "Angel One API", "Data Pipeline"],
     summary:
-      "Built a real-time pipeline extracting bulk deal data from NSE/BSE via Angel One SmartAPI — with an interactive UI for visualization and data-driven trading strategy formulation yielding 15%+ returns.",
+      "Built a real-time market-data pipeline extracting NSE/BSE bulk deal data via Angel One SmartAPI, with an interactive dashboard for ingestion, processing, and analysis.",
     impact: [
-      { metric: "15%+", label: "Strategy returns" },
+      { metric: "Real-time", label: "Market data pipeline" },
       { metric: "Real-time", label: "NSE/BSE feed" },
       { metric: "Live", label: "seven-money.vercel.app" },
     ],
     details: [
-      "Real-time data pipeline from Angel One SmartAPI processing bulk deal market metrics.",
+      "Built a real-time ingestion pipeline around Angel One SmartAPI for processing bulk deal market data.",
       "Interactive dashboard for visualizing institutional bulk deals and formulating trading strategies.",
       "Deployed at seven-money.vercel.app for immediate market analysis.",
     ],
